@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Task Note</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="login_to_continue">Login to continue</string>
+    <string name="email_address">Email address</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="create_new_account">Create new account</string>
+    <string name="already_have_an_account_login">Already have an account? Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="password_min_6_characters">Password (min 6 characters)</string>
+    <string name="sign_up_to_get_started">Sign up to get started</string>
+    <string name="create_account">Create Account</string>
+</resources>

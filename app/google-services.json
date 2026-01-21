@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "439708951659",
+    "project_id": "tasknotes-25218",
+    "storage_bucket": "tasknotes-25218.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:439708951659:android:300eb15b8f48eea422fd2e",
+        "android_client_info": {
+          "package_name": "com.abhi.inc.tasknote"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "439708951659-tr7d3hv163oqju1bon1tlar8349o0bu3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVez3WWopfasKxiFYhxSURVqC8eqotCyE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "439708951659-tr7d3hv163oqju1bon1tlar8349o0bu3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:439708951659:android:a188339e27a6df9022fd2e",
+        "android_client_info": {
+          "package_name": "com.abhi.inc.tasknotesapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "439708951659-tr7d3hv163oqju1bon1tlar8349o0bu3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVez3WWopfasKxiFYhxSURVqC8eqotCyE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "439708951659-tr7d3hv163oqju1bon1tlar8349o0bu3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
