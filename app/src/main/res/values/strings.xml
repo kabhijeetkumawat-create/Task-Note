@@ -11,4 +11,8 @@
     <string name="password_min_6_characters">Password (min 6 characters)</string>
     <string name="sign_up_to_get_started">Sign up to get started</string>
     <string name="create_account">Create Account</string>
+    <string name="_12_jan_10_00_am">12 Jan, 10:00 AM</string>
+    <string name="description">Description</string>
+    <string name="task_title">Task Title</string>
+    <string name="sample_api_task">Sample API Task</string>
 </resources>

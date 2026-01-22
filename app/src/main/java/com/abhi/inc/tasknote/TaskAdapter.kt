@@ -1,10 +1,8 @@
-package com.abhi.inc.tasknote.ui
+package com.abhi.inc.tasknote
 
-import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.abhi.inc.tasknote.Task
 import com.abhi.inc.tasknote.databinding.ItemTaskBinding
 import java.text.SimpleDateFormat
 import java.util.Locale

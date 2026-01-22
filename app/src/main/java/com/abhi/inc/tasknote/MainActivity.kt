@@ -1,5 +1,6 @@
 package com.abhi.inc.tasknote
 
+import android.content.Intent // Import Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.widget.EditText
@@ -8,11 +9,11 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.abhi.inc.tasknote.databinding.ActivityMainBinding
-import com.abhi.inc.tasknote.ui.TaskAdapter
 import com.google.firebase.Timestamp
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.Query
+import kotlin.jvm.java
 
 class MainActivity : AppCompatActivity() {
 
@@ -34,6 +35,11 @@ class MainActivity : AppCompatActivity() {
         setupRecyclerView()
         setupFab()
         listenToTasks()
+
+        binding.btnGoToApi.setOnClickListener {
+            val intent = Intent(this, ApiTaskActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun setupRecyclerView() {
@@ -46,7 +52,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun listenToTasks() {
         val userId = auth.currentUser?.uid ?: return
-
 
         db.collection("tasks")
             .whereEqualTo("userId", userId)
@@ -76,8 +81,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showAddTaskDialog() {
-
-         val dialogView = LayoutInflater.from(this).inflate(R.layout.dialog_add_task, null) // Create this simple XML below
+        val dialogView = LayoutInflater.from(this).inflate(R.layout.dialog_add_task, null)
         val etTitle = dialogView.findViewById<EditText>(R.id.etTitleInput)
         val etDesc = dialogView.findViewById<EditText>(R.id.etDescInput)
 

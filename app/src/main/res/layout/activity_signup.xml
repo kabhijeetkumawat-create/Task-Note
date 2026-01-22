@@ -8,16 +8,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/Signup">
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvTitle"
+        />
 
     <TextView
         android:id="@+id/tvTitle"
+        style="@style/TextTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/create_account"
+        android:layout_marginTop="136dp"
         android:contentDescription="@string/create_account"
-        style="@style/TextTitle"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        android:text="@string/create_account"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvSubtitle"
@@ -29,7 +39,6 @@
         app:layout_constraintTop_toBottomOf="@id/tvTitle"
         app:layout_constraintStart_toStartOf="parent"/>
 
-    <!-- Email Input with Icon (Optional) -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilEmail"
         android:layout_width="0dp"
@@ -152,5 +161,6 @@
         app:layout_constraintTop_toBottomOf="@id/btnSignup"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
